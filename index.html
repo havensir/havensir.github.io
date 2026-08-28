@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Rivera — Software Engineer</title>
+<meta name="description" content="Portfolio and resume of Alex Rivera, computer science student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-inner">
+    <a href="#top" class="nav-name">alex.rivera</a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="resume.pdf" download>↓ resume.pdf</a>
+  </div>
+</header>
+
+<div class="shell" id="top">
+
+  <!-- Signature element: a commit-log rail that doubles as scroll-spy nav -->
+  <aside class="rail" aria-label="Page sections">
+    <span class="rail-label">commit log</span>
+    <a href="#hero" class="commit" data-target="hero">
+      <span class="commit-hash">a1e40c2</span>
+      <span class="commit-msg">init: hero</span>
+    </a>
+    <a href="#about" class="commit" data-target="about">
+      <span class="commit-hash">b7f21a9</span>
+      <span class="commit-msg">add: about</span>
+    </a>
+    <a href="#skills" class="commit" data-target="skills">
+      <span class="commit-hash">c3d908e</span>
+      <span class="commit-msg">add: skills</span>
+    </a>
+    <a href="#projects" class="commit" data-target="projects">
+      <span class="commit-hash">d94a112</span>
+      <span class="commit-msg">add: projects</span>
+    </a>
+    <a href="#experience" class="commit" data-target="experience">
+      <span class="commit-hash">e0b7f3c</span>
+      <span class="commit-msg">add: experience</span>
+    </a>
+    <a href="#education" class="commit" data-target="education">
+      <span class="commit-hash">f228d41</span>
+      <span class="commit-msg">add: education</span>
+    </a>
+    <a href="#contact" class="commit" data-target="contact">
+      <span class="commit-hash">1a5c9e0</span>
+      <span class="commit-msg">add: contact</span>
+    </a>
+  </aside>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="eyebrow"><span class="mono" id="typed">$ whoami</span><span class="caret"></span></div>
+      <h1>Alex Rivera</h1>
+      <p class="role">Computer Science Student &amp; Software Engineer</p>
+      <p class="bio">I build web apps and backend systems, and I'm currently looking for internships where I can ship real features on a real team. Based in [City] — graduating [Month Year].</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="resume.pdf" class="btn btn-secondary" download>Download résumé</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="eyebrow">about</div>
+      <h2>A bit about me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a [year, e.g. junior] studying Computer Science at [University Name]. I like taking projects from a rough idea to something people can actually click through — most recently that's meant a mix of full-stack web work and a few smaller systems-level experiments.</p>
+          <p>Outside of coursework, I contribute to [a club/open-source project/hackathon team], and I write short build notes on projects as I go, which is part of why this whole site is styled like a commit log.</p>
+        </div>
+        <ul class="quickfacts">
+          <li><span>location</span><span>[City, Country]</span></li>
+          <li><span>school</span><span>[University]</span></li>
+          <li><span>grad</span><span>[Month Year]</span></li>
+          <li><span>focus</span><span>Full-stack / Systems</span></li>
+          <li><span>status</span><span>Open to internships</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="eyebrow">skills</div>
+      <h2>Toolbox</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Languages</h3>
+          <div class="tag-list">
+            <span class="tag">Python</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Frameworks</h3>
+          <div class="tag-list">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Next.js</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools</h3>
+          <div class="tag-list">
+            <span class="tag">Git</span>
+            <span class="tag">Docker</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">AWS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="eyebrow">projects</div>
+      <h2>Selected work</h2>
+      <div class="project-grid">
+        <article class="card">
+          <div class="card-top">
+            <h3>Project One</h3>
+            <span class="stat">v1.2.0</span>
+          </div>
+          <p>One or two sentences on the problem this solves and the approach you took. Mention the impact or scale if you have a number worth sharing.</p>
+          <div class="card-links">
+            <a href="#">Code →</a>
+            <a href="#">Live demo →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <h3>Project Two</h3>
+            <span class="stat">v0.9.0</span>
+          </div>
+          <p>What it does, why you built it, and what was technically interesting about it — the part you'd actually want to talk about in an interview.</p>
+          <div class="card-links">
+            <a href="#">Code →</a>
+            <a href="#">Write-up →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <h3>Project Three</h3>
+            <span class="stat">v2.0.0</span>
+          </div>
+          <p>A short, concrete description. Lead with the outcome, not the tech stack — the stack goes in the tags below.</p>
+          <div class="card-links">
+            <a href="#">Code →</a>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-top">
+            <h3>Project Four</h3>
+            <span class="stat">v1.0.0</span>
+          </div>
+          <p>Swap this grid for your real repos — keep the ones you can speak to in depth, cut the rest.</p>
+          <div class="card-links">
+            <a href="#">Code →</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="eyebrow">experience</div>
+      <h2>Where I've worked</h2>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-date">Jun 2025 —<br>Aug 2025</div>
+          <div class="tl-body">
+            <h3>Software Engineering Intern</h3>
+            <div class="tl-org">[Company Name]</div>
+            <ul>
+              <li>Built [a specific feature], used by [X users / part of Y flow].</li>
+              <li>Reduced [metric] by [amount] through [what you changed].</li>
+              <li>Worked with [team size] engineers in an agile sprint cycle.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="tl-item">
+          <div class="tl-date">Sep 2024 —<br>Present</div>
+          <div class="tl-body">
+            <h3>Teaching Assistant, Data Structures</h3>
+            <div class="tl-org">[University Name]</div>
+            <ul>
+              <li>Ran weekly office hours and lab sections for ~[N] students.</li>
+              <li>Wrote and graded assignments on trees, graphs, and dynamic programming.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="eyebrow">education</div>
+      <h2>Education</h2>
+      <div class="edu-item">
+        <div>
+          <h3>B.S. in Computer Science</h3>
+          <div class="tl-org">[University Name]</div>
+        </div>
+        <div class="edu-date">[Year] – [Year] · GPA [X.XX]</div>
+      </div>
+    </section>
+
+    <footer id="contact">
+      <div class="eyebrow">contact</div>
+      <h2>Let's talk</h2>
+      <p class="bio" style="color:var(--ink-soft); max-width:56ch;">I'm currently looking for internship opportunities for [Summer 2027]. The fastest way to reach me is email.</p>
+      <div class="contact-links">
+        <a href="mailto:alex.rivera@example.com">✉ alex.rivera@example.com</a>
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">⌥ GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">in LinkedIn</a>
+        <a href="resume.pdf" download>↓ Résumé (PDF)</a>
+      </div>
+      <p class="copyright">© 2026 Alex Rivera — built with plain HTML/CSS, hosted on GitHub Pages.</p>
+    </footer>
+
+  </main>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
